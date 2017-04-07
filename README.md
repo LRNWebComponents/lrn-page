@@ -1,4 +1,4 @@
-# \<boiler-plate\>
+# \<lrn-page\>
 
 A LRN element
 
