@@ -1,10 +1,12 @@
 <link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../oer-schema/oer-schema.html">
 
 <!--
 `lrn-page`
-A LRN element
+A LRN element for a "page" of material. This ensures there's an OERSchema wrapper
+so that all content produced has a baseline level of being identified as OER.
 
-@demo demo/index.html 
+@demo demo/index.html
 -->
 
 <dom-module id="lrn-page">
@@ -14,20 +16,15 @@ A LRN element
         display: block;
       }
     </style>
-    <h2>Hello [[prop1]]</h2>
+    <oer-schema>
+      <content></content>
+    </oer-schema>
   </template>
 
   <script>
     Polymer({
 
       is: 'lrn-page',
-
-      properties: {
-        prop1: {
-          type: String,
-          value: 'lrn-page',
-        },
-      },
 
     });
   </script>
